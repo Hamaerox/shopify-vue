@@ -1553,10 +1553,10 @@ li {
 }
 
 .mega-title--large {
-  font-size: em($font-size-header + 8);
+  font-size: 5em;
 
   @include media-query($medium-up) {
-    font-size: em(floor($font-size-header * 2.5));
+    font-size: 5em;
   }
 }
 
@@ -1870,7 +1870,7 @@ a[href^="tel"] {
   background-color: transparent;
   border: 0;
   margin: 0;
-  color: $color-text;
+  color: blue;
   text-align: left;
 
   &:not([disabled]):hover,
@@ -4801,8 +4801,8 @@ $nav-button-padding: 15px;
 
 .site-header__mobile-nav {
   z-index: 999;
-  position: relative;
-  background-color: $color-body;
+  position: fixed;
+  background-color: none;
 
   @include media-query($small) {
     @include display-flexbox();
@@ -5848,7 +5848,6 @@ $toolbar-height-small: 46px;
   background: {
     size: cover;
     repeat: no-repeat;
-    position: 50% 50%;
   }
 }
 
